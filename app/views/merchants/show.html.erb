@@ -1,1 +1,8 @@
 <h2><%= @merchant.name %>'s Page</h2>
+<ul>
+  <% @items.each do |item| %>
+    <li>
+      <%= item.name %>
+    </li>
+  <% end %>
+</ul>

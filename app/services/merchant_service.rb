@@ -12,7 +12,11 @@ class MerchantService
     get_url('/api/v1/merchants')
   end
 
-  def self.merchant(id)
-    get_url("/api/v1/merchants/#{id}")
+  def self.merchant(merchant_id)
+    get_url("/api/v1/merchants/#{merchant_id}")
+  end
+
+  def self.merchant_items(merchant_id)
+    get_url("/api/v1/merchants/#{merchant_id}/items")
   end
 end
